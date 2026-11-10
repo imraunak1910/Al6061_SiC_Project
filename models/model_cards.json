@@ -1,0 +1,104 @@
+{
+  "UTS_MPa": {
+    "target": "UTS_MPa",
+    "n_papers": 2,
+    "n_obs": 9,
+    "papers": [
+      "N01",
+      "P01"
+    ],
+    "sic_min": 0.0,
+    "sic_max": 15.0,
+    "features": [
+      "SiC_wt_pct"
+    ],
+    "eligible": false,
+    "reason": "Only 2 independent paper(s) / 9 observations (need >= 3 papers and >= 10 obs).",
+    "best_model": null,
+    "metrics": null,
+    "saved_model": "models/UTS_MPa__Linear_Regression.joblib"
+  },
+  "Yield_strength_MPa": {
+    "target": "Yield_strength_MPa",
+    "n_papers": 1,
+    "n_obs": 6,
+    "papers": [
+      "P01"
+    ],
+    "sic_min": 0.0,
+    "sic_max": 15.0,
+    "features": [
+      "SiC_wt_pct"
+    ],
+    "eligible": false,
+    "reason": "Only 1 independent paper(s) / 6 observations (need >= 3 papers and >= 10 obs).",
+    "best_model": null,
+    "metrics": null,
+    "saved_model": "models/Yield_strength_MPa__Linear_Regression.joblib"
+  },
+  "Vickers_HV": {
+    "target": "Vickers_HV",
+    "n_papers": 3,
+    "n_obs": 12,
+    "papers": [
+      "N01",
+      "N27",
+      "P01"
+    ],
+    "sic_min": 0.0,
+    "sic_max": 15.0,
+    "features": [
+      "SiC_wt_pct"
+    ],
+    "eligible": true,
+    "reason": "Linear Regression LOPO MAE 16.49 < baseline 41.73.",
+    "best_model": "Linear Regression",
+    "metrics": {
+      "Baseline (mean)": {
+        "MAE": 41.73402777777778,
+        "RMSE": 44.975156853414056,
+        "R2": -1.4354125970123368
+      },
+      "Linear Regression": {
+        "MAE": 16.494037895637735,
+        "RMSE": 18.797012968484076,
+        "R2": 0.574592779594589
+      },
+      "Random Forest": {
+        "MAE": 25.655325925925766,
+        "RMSE": 33.34788112885079,
+        "R2": -0.33894785631506696
+      },
+      "Extra Trees": {
+        "MAE": 24.085302777777486,
+        "RMSE": 31.56045282952176,
+        "R2": -0.1992607675265914
+      },
+      "Gradient Boosting": {
+        "MAE": 24.45657966501258,
+        "RMSE": 31.636426801066353,
+        "R2": -0.20504156347586533
+      }
+    },
+    "saved_model": "models/Vickers_HV__Linear_Regression.joblib"
+  },
+  "Elongation_pct": {
+    "target": "Elongation_pct",
+    "n_papers": 2,
+    "n_obs": 9,
+    "papers": [
+      "N01",
+      "P01"
+    ],
+    "sic_min": 0.0,
+    "sic_max": 15.0,
+    "features": [
+      "SiC_wt_pct"
+    ],
+    "eligible": false,
+    "reason": "Only 2 independent paper(s) / 9 observations (need >= 3 papers and >= 10 obs).",
+    "best_model": null,
+    "metrics": null,
+    "saved_model": "models/Elongation_pct__Linear_Regression.joblib"
+  }
+}

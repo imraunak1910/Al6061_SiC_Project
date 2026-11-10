@@ -1,0 +1,9 @@
+Property,Set,N_obs,N_papers,Mean,SD,Min,Max,SiC_min,SiC_max,IQR_outliers
+UTS_MPa,core_primary,9,2,119.89,25.08,81.28,157.0,0.0,15.0,
+UTS_MPa,all_binary_ascast,19,7,139.81,75.48,39.1,329.0,0.0,20.0,"N03-001, N07-003"
+Yield_strength_MPa,core_primary,6,1,49.09,25.34,10.67,78.03,0.0,15.0,
+Yield_strength_MPa,all_binary_ascast,9,2,49.13,20.29,10.67,78.03,0.0,15.0,"P01-014, P01-022"
+Elongation_pct,core_primary,9,2,6.7,3.23,1.17,11.89,0.0,15.0,
+Elongation_pct,all_binary_ascast,12,3,5.34,3.7,0.6,11.89,0.0,15.0,
+Vickers_HV,core_primary,12,3,106.19,30.1,68.0,150.2,0.0,15.0,
+Vickers_HV,all_binary_ascast,18,6,93.89,35.77,36.0,150.2,0.0,15.0,
